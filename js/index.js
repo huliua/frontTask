@@ -3,9 +3,6 @@
  * @date 2020/4/7 21:58
  */
 $(function(){
-    /**
-     * 使用getJson方法读取本地的json文件，并将数据显示在界面中
-     */
     $.getJSON("data.json",function (data) {
         if(data == null || data.length <= 0){
             alert("读取数据错误！")
