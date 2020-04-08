@@ -5,8 +5,6 @@
 $(function(){
     /**
      * 使用getJson方法读取本地的json文件，并将数据显示在界面中
-     * 2
-
      */
     $.getJSON("data.json",function (data) {
         if(data == null || data.length <= 0){
@@ -35,10 +33,15 @@ function countTime(time) {
     var page_time = new Date(time); //文章发布时间
     page_time.setFullYear(now.getFullYear());
     var timeDiff = now.getTime() - page_time.getTime();
-    return f(timeDiff);
+    return getTimeDiff(timeDiff);
 }
 
-function  f(timeDiff) {
+/**
+ * 计算传入的时间戳具体是多长时间（以年、月、周、日、小时、分钟为单位）
+ * @param timeDiff
+ * @returns {string}
+ */
+function  getTimeDiff(timeDiff) {
     // 单位换算
     var min = 60 * 1000;
     var hour = min * 60;
@@ -47,7 +50,7 @@ function  f(timeDiff) {
     var month = day * 30;
     var year = day * 365;
 
-    // 计算发布时间距离当前时间的周、天、时、分
+    // 计算发布时间距离当前时间的年、月、周、天、时、分
     var exceedYear = Math.floor(timeDiff/year);
     var exceedMonth = Math.floor(timeDiff/month);
     var exceedWeek = Math.floor(timeDiff/week);
