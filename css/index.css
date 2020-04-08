@@ -1,0 +1,128 @@
+/**
+* @author 刘虎
+* @date 2020/4/8 11:24
+*/
+body{
+    background: #F8F8FA;
+}
+.public-header{
+    background-image: linear-gradient(#2a89f1, #2d61c6);
+    height: 300px;
+}
+
+.index-banner{
+    position: relative;
+    margin: 0 auto;
+    top:-140px;
+    height:650px;
+    background: #fff;
+    border-radius: 50px 50px 0 0;
+}
+.index-banner .banner-img{
+    position: absolute;
+    height: 58%;
+    width: 92%;
+    margin-left: 4%;
+    margin-top: 4%;
+}
+.index-banner .banner-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+.index-banner .banner-list{
+    position: absolute;
+    width:100%;
+    height: 38%;
+    bottom:2%;
+}
+.index-banner .banner-list .list-item{
+    float: left;
+    height: 70%;
+    width:25%;
+    margin-top:8%;
+}
+.index-banner .banner-list .list-item img{
+    width:30%;
+    height: 45%;
+    margin: 0 auto;
+}
+.index-banner .banner-list .list-item.small-img img{
+    width:30%;
+    height: 45%;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.index-banner .banner-list .list-item p{
+    font-size: 35px;
+    margin-top: 12%;
+    text-align: center;
+}
+
+.public-container{
+    width: 100%;
+    position: relative;
+    top:-100px;
+    background: white;
+}
+.public-container .container-header{
+    height: 120px;
+    width: 90%;
+    font-size: 50px;
+    font-weight: inherit;
+    margin:0 auto;
+    border-bottom: 5px solid #F8F8FA;
+    line-height: 120px;
+}
+.public-container .container-list{
+    width: 90%;
+    margin:0 auto;
+}
+
+.public-container .container-list .information{
+    height: 240px;
+    border-bottom: 5px solid #F8F8FA;
+}
+.public-container .container-list .information .information-left{
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+.public-container .container-list .information .information-left p{
+    font-size: 40px;
+    width:100%;
+    height: 46%;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    font-family: "Adobe 宋体 Std L";
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.public-container .container-list .information .information-left span{
+    font-size: 30px;
+    color: #6e6e6e;
+    float: left;
+}
+.public-container .container-list .information .information-left span:last-child{
+    font-size: 30px;
+    color: #6e6e6e;
+    float: right;
+    margin-right: 15%;
+}
+
+.public-container .container-list .information .information-right{
+    width: 30%;
+    height: 100%;
+    float: right;
+}
+.public-container .container-list .information .information-right img{
+    width: 90%;
+    height: 90%;
+    margin: 4% auto;
+}
